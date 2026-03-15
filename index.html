@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shreya Sahu | Deep Sea Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #00f2ff; --bg: #000205; }
+        body { margin: 0; background: var(--bg); color: white; font-family: 'Montserrat', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
+        
+        /* Deep Sea Background */
+        .ocean-bg {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+            background: linear-gradient(to bottom, #4fc3f7, #1976d2, #011627, #000205);
+            z-index: -2;
+        }
+
+        section { min-height: 100vh; display: flex; justify-content: center; align-items: center; position: relative; padding: 40px; }
+
+        /* Resume Content Styling */
+        .resume-card {
+            background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(0, 242, 255, 0.3);
+            backdrop-filter: blur(15px); padding: 50px; border-radius: 30px; width: 70%;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .title-name { font-family: 'Syncopate', sans-serif; font-size: 4vw; color: white; margin: 0; text-transform: uppercase; }
+        .accent { color: var(--accent); text-shadow: 0 0 15px var(--accent); }
+        h2 { border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; text-transform: uppercase; }
+
+        /* Horizontal Scroll for Projects */
+        .horizontal-container { overflow: hidden; width: 100%; }
+        .horizontal-wrapper { display: flex; width: 400vw; }
+        .panel { width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; flex-shrink: 0; }
+
+        .bubble { position: absolute; background: rgba(255,255,255,0.2); border-radius: 50%; pointer-events: none; }
+    </style>
+</head>
+<body>
+
+    <div class="ocean-bg"></div>
+
+    <section id="hero">
+        <div class="resume-card" style="text-align: center;">
+            <h1 class="title-name">SHREYA <span class="accent">SAHU</span></h1>
+            <p style="letter-spacing: 5px;">Creative Content Developer & Administrative Professional</p> 
+            <hr style="border: 0.5px solid var(--accent); margin: 30px 0;">
+            <h3>INTRODUCTION</h3> 
+            <p style="line-height: 1.8; font-size: 1.1rem;">"Detail-oriented professional with expertise in Digital Content Development and Data Management. Skilled in executing administrative tasks with high accuracy, managing stakeholder relationships, and utilizing creative design skills to enhance organizational branding."</p> 
+        </div>
+    </section>
+
+    <section>
+        <div class="resume-card">
+            <h2>Technical Skills & Education</h2> [cite: 7, 14]
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px;">
+                <div>
+                    <p><strong>MA (Pursuing):</strong> P.P.N. College</p> [cite: 13]
+                    <p><strong>BA (2024):</strong> P.P.N. College</p> [cite: 10, 11]
+                    <p><strong>Tools:</strong> MS Excel, Power BI, HTML, CSS, GIS Tools</p> [cite: 27, 28, 29, 30]
+                </div>
+                <div>
+                    <p><strong>Core Expertise:</strong> Office Automation, Web Development, Geospatial Analysis, and Digital Strategy.</p> [cite: 16, 18, 19, 20]
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <div class="horizontal-container">
+    <div class="horizontal-wrapper">
+        
+        <div class="panel">
+            <div class="resume-card">
+                <h2 class="accent">Land Use and Land Cover Mapping</h2>
+                <p>Mapped Central Kanpur's urban growth (2000-2020) using satellite imagery, achieving <strong>>90% accuracy</strong> and projecting 178.94 sq km expansion by 2050.</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 25px;">
+                    <a href="https://code.earthengine.google.com/b8847d2d9a1e97c89e784ca1a92f2998?hideCode=true" target="_blank" class="project-btn">Explore Live Map (GEE)</a>
+                    <a href="https://drive.google.com/file/d/1H7b3_urBuUJINRkL-ltB3Lu3lBxEu-em/view?usp=drive_link" target="_blank" class="project-btn" style="border-color: #ff0077; color: #ff0077;">View Research Report</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="resume-card">
+                <h2>Deloitte Simulation</h2>
+                <p>Completed Data Analytics Virtual Simulation, gaining hands-on experience in forensic technology and data-driven insights.</p>
+                <a href="https://drive.google.com/file/d/1RT8KNpAdZNNv6v1qhYSQNsT-kPbrgnVD/view" target="_blank" class="project-btn">Open Certificate</a>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="resume-card">
+                <h2>Tata GenAI Analytics</h2>
+                <p>Practical experience in exploratory data analysis, risk profiling, and AI-driven delinquency prediction.</p>
+              <a href="https://drive.google.com/file/d/1aIAYg8Y9Vi23GW9dbVZhlG1ncgYHUe8E/view?usp=drive_link" target="_blank" class="project-btn">
+                    Open Certificate
+                </a>
+                </div>
+        </div>
+
+        <div class="panel">
+            <div class="resume-card">
+                <h2>Globalization Study</h2>
+                <p>Analyzed over 60% of economic policy shifts linked to global integration and multinational influence.</p>
+              <a href="https://drive.google.com/file/d/1aIAYg8Y9Vi23GW9dbVZhlG1ncgYHUe8E/view?usp=drive_link" target="_blank" class="project-btn" style="border-color: #ff0077; color: #ff0077;">
+                    View Case Study
+                </a>
+            </div>
+        </div>
+
+    </div> </div> <section>
+    <div class="resume-card">
+        <h2>Experience & Contact</h2> 
+        <p><strong>VPP MFD PVT LTD:</strong> Data Analyst (Internship 2026). Managed organizational data entry and streamlined internal documentation.</p>
+        
+    </div>
+</section>
+            <hr style="border: 0.5px solid var(--accent); margin: 20px 0;">
+            <p>📍 37/6 Juhi Lal Colony, Kanpur | 📞 +91-9580831383</p> [cite: 4, 5]
+        </div>
+    </section>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Background Depth Animation
+        gsap.to(".ocean-bg", {
+            scrollTrigger: { trigger: "body", start: "top top", end: "bottom bottom", scrub: 1 },
+            y: "-75%"
+        });
+
+        // Horizontal Scroll for Panels
+        let sections = gsap.utils.toArray(".panel");
+        gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".horizontal-container",
+                pin: true,
+                scrub: 1,
+                end: () => "+=" + window.innerWidth * 3
+            }
+        });
+
+        // Bubbles Effect
+        for (let i = 0; i < 40; i++) {
+            let b = document.createElement('div');
+            b.className = 'bubble';
+            let s = Math.random() * 25 + 5 + 'px';
+            b.style.width = s; b.style.height = s;
+            b.style.left = Math.random() * 100 + 'vw';
+            b.style.top = Math.random() * 400 + 'vh';
+            document.body.appendChild(b);
+            gsap.to(b, { y: -600, duration: Math.random() * 10 + 5, repeat: -1, ease: "linear" });
+        }
+    </script>
+</body>
+</html>
